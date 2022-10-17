@@ -1,0 +1,127 @@
+/* This is the style sheet for cat club's second meeting. */
+
+
+
+.image {
+    max-width: 300px;
+    width: 500px;
+    margin: 5vh;
+}
+
+.image_font {
+    font-size: 4mm;
+    word-spacing: 1pt;
+    margin-left: 2vw;
+}
+
+h1, h2 {
+    font-family: 'Comic Neue', cursive;
+}
+
+h1 {
+    display: block;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+h2 {
+    border-color: black;
+    border-style: solid;
+    border-radius: 2px;
+    padding-top: 4px;
+    padding-left: 2px;
+    padding-bottom: 4px;
+}
+
+.missing {
+    display: none;
+}
+
+.flex_list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.flex_item {
+    width: 150px;
+    height: 100px;
+    background: rgb(230, 0, 255);
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;
+    line-height: 100px;
+    font-weight: bolder;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: cornflowerblue;
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 20px;
+    font-size: x-large;
+}
+
+.gird_item {
+    text-align: center;
+    background-color: blue;
+    padding: 10px;
+    font-size: 1.5em;
+    height: 70px;
+    width: 150px;
+    line-height: 50px;
+    color: aliceblue;
+}
+
+fieldset {
+    position: static;
+    height: 100vh;
+    max-height: 50vh;
+}
+
+button:hover {
+    color: red;
+}
+
+button:active {
+    color: blue;
+}
+
+@media (max-width: 1000px) {
+    * {
+        display: none;
+    }
+}
+
+#indented {
+    position: relative;
+    left: 20px;
+}
+
+a[href="#logistic"] {
+    color:green;
+}
+
+main h2 {
+    color: blue;
+}
+
+image ~ p {
+    background-color: red;
+}
+
+ul > li {
+    color: purple;
+}
+
+h2 + p {
+    color:darkred;
+}
+
+div.gird_item {
+    font-weight: bolder;
+}
